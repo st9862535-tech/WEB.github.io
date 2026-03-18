@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас — Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-area">
+            <img src="images/logo-car.png" alt="Car Rental" class="logo-img">
+            <span class="logo-text">Car Rental</span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Головна</a>
+            <a href="vehicles.html">Автопарк</a>
+            <a href="#">Деталі</a>
+            <a href="aboutus" ">Про нас</a>
+            <a href="#" class="active">Контакти</a>
+        </nav>
+
+        <div class="header-contacts">
+            <a href="tel:+380666666666" class="phone-icon-link">
+                <div class="phone-icon-circle">
+                    <img src="images/OIP.png" alt="тел" class="phone-icon-img">
+                </div>
+            </a>
+            <div class="phone-text">
+                <span>Наш номер</span>
+                <strong>+380 666 666 666</strong>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-wrapper">
+        <section class="page-header">
+            <h2 class="page-title">Зв'яжіться з нами</h2>
+            <p class="breadcrumb">Головна / <span>Контакти</span></p>
+        </section>
+
+        <section class="booking-section">
+            <div class="booking-container">
+                <div class="booking-card">
+                    <h3 class="booking-title">Забронюйте авто</h3>
+                    <form class="booking-form">
+                        <div class="input-group">
+                            <select><option>Тип автомобіля</option></select>
+                        </div>
+                        <div class="input-group">
+                            <select><option>Місце оренди</option></select>
+                        </div>
+                        <div class="input-group">
+                            <select><option>Місце повернення</option></select>
+                        </div>
+                        <div class="date-inputs">
+                            <div class="input-group">
+                                <input type="text" placeholder="Дата оренди" onfocus="(this.type='date')">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Дата повернення" onfocus="(this.type='date')">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-submit">Забронювати зараз</button>
+                    </form>
+                </div>
+
+                <div class="booking-image-wrap">
+                    <div class="blurred-img"></div>
+                </div>
+            </div>
+			<section class="stats-overview">
+    <div class="stats-header">
+        <div class="stat-box">
+            <span class="stat-value">20k+</span>
+            <p>Щасливих клієнтів</p>
+        </div>
+        <div class="stat-box">
+            <span class="stat-value">540+</span>
+            <p>Кількість авто</p>
+        </div>
+        <div class="stat-box">
+            <span class="stat-value">25+</span>
+            <p>Років досвіду</p>
+        </div>
+    </div>
+
+    <div class="benefits-grid">
+        <div class="benefits-text">
+            <h2>Відкрийте незабутні спогади в дорозі</h2>
+            <p>Ми пропонуємо найкращий сервіс оренди, щоб ваша поїздка була максимально комфортною та безпечною.</p>
+            <div class="check-list">
+                <div class="check-item"><span color="white">✓</span> Надійні автомобілі</div>
+                <div class="check-item"><span>✓</span> Прозорі умови</div>
+                <div class="check-item"><span>✓</span> Підтримка 24/7</div>
+                <div class="check-item"><span>✓</span> Вигідні ціни</div>
+            </div>
+        </div>
+        <div class="benefits-image">
+            <div class="blurred-bg-card"></div>
+        </div>
+    </div>
+</section>
+
+<section class="app-promo">
+    <div class="app-banner-card">
+        <div class="app-mockup">
+            <img src="images/dodatok.jpg" alt="Phone">
+        </div>
+        <div class="app-info">
+            <span class="label">ЗАВАНТАЖТЕ НАШ ДОДАТОК</span>
+            <h2>Завантажуйте наш додаток</h2>
+            <p>Керуйте вашою орендою прямо зі смартфона. Швидко, зручно та завжди під рукою.</p>
+            <div class="store-buttons">
+                <img src="images/app-store.png" alt="App Store">
+                <img src="images/google-play.png" alt="Google Play">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <h2 class="section-center-title">Популярні питання</h2>
+    <div class="faq-list">
+        <details class="faq-item" open>
+            <summary>Як це працює? <span class="faq-icon">⌄</span></summary>
+            <div class="faq-content">
+                <p>Процес оренди дуже простий: обираєте авто, бронюєте дату, підписуєте договір онлайн та забираєте ключі.</p>
+            </div>
+        </details>
+        <details class="faq-item">
+            <summary>Чи можу я орендувати авто без кредитної картки? <span class="faq-icon">⌄</span></summary>
+            <div class="faq-content">
+                <p>Так, ми приймаємо різні види оплати, включаючи дебетові картки та готівку в офісах.</p>
+            </div>
+        </details>
+        <details class="faq-item">
+            <summary>Які вимоги для оренди автомобіля? <span class="faq-icon">⌄</span></summary>
+            <div class="faq-content">
+                <p>Вам має бути від 21 року, а стаж водіння — не менше 2 років.</p>
+            </div>
+        </details>
+    </div>
+</section>
+
+<section class="blog-section">
+    <h2 class="section-center-title">Останні новини та статті</h2>
+    <div class="blog-grid">
+        <div class="blog-card">
+            <div class="blog-img" style="background-image: url('images/hero-bg.png');"></div>
+            <h3>Як обрати правильне авто</h3>
+            <span>Новини / 12 Квітня 2024</span>
+        </div>
+        <div class="blog-card">
+            <div class="blog-img" style="background-image: url('images/hero-bg.png');"></div>
+            <h3>Який план підходить саме мені?</h3>
+            <span>Новини / 12 Квітня 2024</span>
+        </div>
+        <div class="blog-card">
+            <div class="blog-img" style="background-image: url('images/hero-bg.png');"></div>
+            <h3>Насолоджуйтесь швидкістюш
+        </section>
+		<footer class="footer">
+    <div class="container">
+<div class="footer-contacts">
+        <div class="logo-area">
+            <img src="images/logo-car.png" alt="Car Rental" class="logo-img">
+            <span class="logo-text">Car Rental</span>
+        </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-map.png" alt="Address">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Адреса</strong>
+            <p class="contact-value">вул. Центральна, Київ, 01001</p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-mail.png" alt="Email">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Email</strong>
+            <p class="contact-value">info@car-rental.com.ua</p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-phone.png" alt="Phone">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Телефон</strong>
+            <p class="contact-value">+380 666 666 666</p>
+        </div>
+
+        </div>
+    </div>
+	<div class="brands-photo-container">
+    <img src="images/brands.png" alt="Бренди" class="brands-full-photo">
+</div>
+</section>
+<footer class="footer">
+    <div class="container">
+<div class="footer-contacts">
+        <div class="logo-area">
+            <img src="images/logo-car.png" alt="Car Rental" class="logo-img">
+            <span class="logo-text">Car Rental</span>
+        </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-map.png" alt="Address">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Адреса</strong>
+            <p class="contact-value">вул. Центральна, Київ, 01001</p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-mail.png" alt="Email">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Email</strong>
+            <p class="contact-value">info@car-rental.com.ua</p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-phone.png" alt="Phone">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Телефон</strong>
+            <p class="contact-value">+380 666 666 666</p>
+        </div>
+    </div>
+</div>
+<div class="footer-main">
+    <div class="footer-column footer-description">
+        <h3>Завантажуй мобільний додаток і насолоджуйся швидкою, зручною та простою орендою авто будь-де і будь-коли — обирай авто, бронюй за секунди та вирушай у дорогу без зайвих турбот.</h3>
+  
+    </div>
+
+    <div class="footer-column">
+        <h3>Корисні посилання</h3>
+        <ul>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Зв'яжіться з нами</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">F.A.Q</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Транспортні засоби</h3>
+        <ul>
+            <li><a href="#">Седан</a></li>
+            <li><a href="#">Кабріолет</a></li>
+            <li><a href="#">Пікап</a></li>
+            <li><a href="#">Мінівен</a></li>
+            <li><a href="#">Позашляховик</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Завантажити додаток</h3>
+        <div class="footer-app-links">
+            <a href="https://apps.apple.com/us/app/apple-store/id375380948"><img src="images/app-store.png" alt="App Store"></a>
+            <a href="https://play.google.com/store/games?hl=uk"><img src="images/google-play.png" alt="Google Play"></a>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div class="container">
+        <p>© Copyright Car Rental 2026. Design by ASiryi.guru</p>
+    </div>
+</div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автопарк — Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-area">
+            <img src="images/logo-car.png" alt="Car Rental" class="logo-img">
+            <span class="logo-text">Car Rental</span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Головна</a>
+            <a href="vehicles.html" class="active">Автопарк</a>
+            <a href="#">Деталі</a>
+            <a href="aboutus.html">Про нас</a>
+            <a href="contactus">Контакти</a>
+        </nav>
+
+        <div class="header-contacts">
+            <a href="tel:+380666666666" class="phone-icon-link">
+                <div class="phone-icon-circle">
+                    <img src="images/OIP.png" alt="тел" class="phone-icon-img">
+                </div>
+            </a>
+            <div class="phone-text">
+                <span>Наш номер</span>
+                <strong>+380 666 666 666</strong>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 50px;">
+        
+        <section class="vehicles-filter-section">
+            <h1 class="select-vehicle-title">Оберіть категорію авто</h1>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active">Усі авто</button>
+                <button class="filter-btn">Седан</button>
+                <button class="filter-btn">Кабріолет</button>
+                <button class="filter-btn">Пікап</button>
+                <button class="filter-btn">Позашляховик</button>
+                <button class="filter-btn">Мінівен</button>
+            </div>
+        </section>
+
+  <section class="car-selection" style="padding: 0; margin-bottom: 100px;">
+    <div class="car-grid">
+        
+        <div class="car-card">
+            <div class="car-image"><img src="images/mercedes-sedan.png" alt="Mercedes"></div>
+            <div class="car-details">
+                <div class="car-title"><h3>Mercedes</h3><p>Седан</p></div>
+                <div class="car-price"><strong>$25</strong><span>на день</span></div>
+            </div>
+            <div class="car-specs">
+                <span class="spec-item"><img src="images/icon-automat.png" class="spec-icon"> Автомат</span>
+                <span class="spec-item"><img src="images/icon-gas.png" class="spec-icon"> Бензин 95</span>
+                <span class="spec-item"><img src="images/icon-air.png" class="spec-icon"> Кондиціонер</span>
+            </div>
+            <a href="vehicles/Mercedes.html" class="btn-view-details">Детальніше</a>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/mercedes-benz_s-class.png" alt="Mercedes S"></div>
+            <div class="car-details">
+                <div class="car-title"><h3>Mercedes S-Class</h3><p>Спорт</p></div>
+                <div class="car-price"><strong>$50</strong><span>на день</span></div>
+            </div>
+            <div class="car-specs">
+                <span class="spec-item"><img src="images/icon-automat.png" class="spec-icon"> Автомат</span>
+                <span class="spec-item"><img src="images/icon-gas.png" class="spec-icon"> Бензин 95</span>
+                <span class="spec-item"><img src="images/icon-air.png" class="spec-icon"> Кондиціонер</span>
+            </div>
+            <a href="vehicles/mercedes-benz_s-class.html" class="btn-view-details">Детальніше</a>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/bmw-m5.png" alt="BMW"></div>
+            <div class="car-details">
+                <div class="car-title"><h3>BMW M5</h3><p>Седан</p></div>
+                <div class="car-price"><strong>$45</strong><span>на день</span></div>
+            </div>
+            <div class="car-specs">
+                <span class="spec-item"><img src="images/icon-automat.png" class="spec-icon"> Автомат</span>
+                <span class="spec-item"><img src="images/icon-gas.png" class="spec-icon"> Бензин 95</span>
+                <span class="spec-item"><img src="images/icon-air.png" class="spec-icon"> Кондиціонер</span>
+            </div>
+				<a href="vehicles/BMW.html" class="btn-view-details">Детальніше</a>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/porsche-suv.png" alt="Porsche"></div>
+            <div class="car-details">
+                <div class="car-title"><h3>Porsche Cayenne</h3><p>Кросовер</p></div>
+                <div class="car-price"><strong>$40</strong><span>на день</span></div>
+            </div>
+            <div class="car-specs">
+                <span class="spec-item"><img src="images/icon-automat.png" class="spec-icon"> Автомат</span>
+                <span class="spec-item"><img src="images/icon-gas.png" class="spec-icon"> Бензин 95</span>
+                <span class="spec-item"><img src="images/icon-air.png" class="spec-icon"> Кондиціонер</span>
+            </div>
+            <a href="vehicles/porshe.html" class="btn-view-details">Детальніше</a>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/porsche-suv.png" alt="Toyota"></div>
+            <div class="car-details">
+                <div class="car-title"><h3>Porsche Cayenne</h3><p>Седан</p></div>
+                <div class="car-price"><strong>$35</strong><span>на день</span></div>
+            </div>
+            <div class="car-specs">
+                <span class="spec-item"><img src="images/icon-automat.png" class="spec-icon"> Автомат</span>
+                <span class="spec-item"><img src="images/icon-gas.png" class="spec-icon"> Бензин 95</span>
+                <span class="spec-item"><img src="images/icon-air.png" class="spec-icon"> Кондиціонер</span>
+            </div>
+            <a href="vehicles/porshe.html" class="btn-view-details">Детальніше</a>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/mercedes-benz_s-class.png" alt="Mercedes S"></div>
+            <div class="car-details">
+                <div class="car-title"><h3>Mercedes S-Class</h3><p>Спорт</p></div>
+                <div class="car-price"><strong>$50</strong><span>на день</span></div>
+            </div>
+            <div class="car-specs">
+                <span class="spec-item"><img src="images/icon-automat.png" class="spec-icon"> Автомат</span>
+                <span class="spec-item"><img src="images/icon-gas.png" class="spec-icon"> Бензин 95</span>
+                <span class="spec-item"><img src="images/icon-air.png" class="spec-icon"> Кондиціонер</span>
+            </div>
+            <a href="vehicles/mercedes-benz_s-class.html" class="btn-view-details">Детальніше</a>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/bmw-m5.png" alt="Mercedes"></div>
+            <div class="car-details">
+                <div class="car-title"><h3>BMW M5</h3><p>Седан</p></div>
+                <div class="car-price"><strong>$45</strong><span>на день</span></div>
+            </div>
+            <div class="car-specs">
+                <span class="spec-item"><img src="images/icon-automat.png" class="spec-icon"> Автомат</span>
+                <span class="spec-item"><img src="images/icon-gas.png" class="spec-icon"> Бензин 95</span>
+                <span class="spec-item"><img src="images/icon-air.png" class="spec-icon"> Кондиціонер</span>
+            </div>
+  <a href="vehicles/BMW.html" class="btn-view-details">Детальніше</a>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/mercedes-sedan.png" alt="Toyota"></div>
+            <div class="car-details">
+              <div class="car-title"><h3>Mercedes</h3><p>Седан</p></div>
+                <div class="car-price"><strong>$25</strong><span>на день</span></div>
+            </div>
+            <div class="car-specs">
+                <span class="spec-item"><img src="images/icon-automat.png" class="spec-icon"> Автомат</span>
+                <span class="spec-item"><img src="images/icon-gas.png" class="spec-icon"> Бензин 95</span>
+                <span class="spec-item"><img src="images/icon-air.png" class="spec-icon"> Кондиціонер</span>
+            </div>
+            <a href="vehicles/Mercedes.html" class="btn-view-details">Детальніше</a>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/bmw-m5.png" alt="Maybach"></div>
+            <div class="car-details">
+               <div class="car-title"><h3>BMW M5</h3><p>Седан</p></div>
+                <div class="car-price"><strong>$45</strong><span>на день</span></div>
+            </div>
+            <div class="car-specs">
+                <span class="spec-item"><img src="images/icon-automat.png" class="spec-icon"> Автомат</span>
+                <span class="spec-item"><img src="images/icon-gas.png" class="spec-icon"> Бензин 95</span>
+                <span class="spec-item"><img src="images/icon-air.png" class="spec-icon"> Кондиціонер</span>
+            </div>
+			<a href="vehicles/BMW.html" class="btn-view-details">Детальніше</a>
+        </div>
+    </div>
+	<div class="brands-photo-container">
+    <img src="images/brands.png" alt="Бренди" class="brands-full-photo">
+</div>
+</section>
+    </main>
+
+<footer class="footer">
+    <div class="container">
+<div class="footer-contacts">
+        <div class="logo-area">
+            <img src="images/logo-car.png" alt="Car Rental" class="logo-img">
+            <span class="logo-text">Car Rental</span>
+        </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-map.png" alt="Address">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Адреса</strong>
+            <p class="contact-value">вул. Центральна, Київ, 01001</p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-mail.png" alt="Email">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Email</strong>
+            <p class="contact-value">info@car-rental.com.ua</p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-phone.png" alt="Phone">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Телефон</strong>
+            <p class="contact-value">+380 666 666 666</p>
+        </div>
+    </div>
+</div>
+<div class="footer-main">
+    <div class="footer-column footer-description">
+        <h3>Завантажуй мобільний додаток і насолоджуйся швидкою, зручною та простою орендою авто будь-де і будь-коли — обирай авто, бронюй за секунди та вирушай у дорогу без зайвих турбот.</h3>
+  
+    </div>
+
+    <div class="footer-column">
+        <h3>Корисні посилання</h3>
+        <ul>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Зв'яжіться з нами</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">F.A.Q</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Транспортні засоби</h3>
+        <ul>
+            <li><a href="#">Седан</a></li>
+            <li><a href="#">Кабріолет</a></li>
+            <li><a href="#">Пікап</a></li>
+            <li><a href="#">Мінівен</a></li>
+            <li><a href="#">Позашляховик</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Завантажити додаток</h3>
+        <div class="footer-app-links">
+            <a href="https://apps.apple.com/us/app/apple-store/id375380948"><img src="images/app-store.png" alt="App Store"></a>
+            <a href="https://play.google.com/store/games?hl=uk"><img src="images/google-play.png" alt="Google Play"></a>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div class="container">
+        <p>© Copyright Car Rental 2026. Design by ASiryi.guru</p>
+    </div>
+</div>
+</body>
+</html>

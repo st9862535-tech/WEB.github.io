@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental — Оренда авто</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-area">
+            <img src="images/logo-car.png" alt="Car Rental" class="logo-img">
+            <span class="logo-text">Car Rental</span>
+        </div>
+
+        <nav class="main-nav">
+			<a href="#" class="active">Головна</a>
+            <a href="vehicles.html">Автопарк</a>
+            <a href="#">Деталі</a>
+            <a href="aboutus.html">Про нас</a>
+            <a href="contactus">Контакти</a>
+        </nav>
+
+        <div class="header-contacts">
+            <a href="tel:+380666666666" class="phone-icon-link">
+                <div class="phone-icon-circle">
+                    <img src="images/OIP.png" alt="тел" class="phone-icon-img">
+                </div>
+            </a>
+            <div class="phone-text">
+                <span>Наш номер</span>
+                <strong>+380 666 666 666</strong>
+            </div>
+        </div>
+    </header>
+
+<section class="hero">
+
+  <div class="hero-text">
+
+    <h1>Відчуйте дорогу, як ніколи раніше</h1>
+
+    <h3 class="fun-text">
+
+      Сідайте в машину, пристібайтесь і забудьте про всі турботи. Наші авто швидкі, комфортні і терплячі до ваших ідей на дорозі.
+
+    </h3><br><br>
+
+    <button class="btn-orange">Дивитись всі авто</button>
+
+  </div>
+
+
+
+  <div class="booking">
+
+    <h3>Забронювати авто</h3>
+
+
+
+    <select>
+
+      <option disabled selected>Тип автомобіля</option>
+
+      <option>Mercedes-Benz</option>
+
+      <option>BMW</option>
+
+      <option>MG</option>
+
+      <option>Renault</option>
+
+      <option>Porsche</option>
+
+    </select>
+
+
+
+    <select>
+
+      <option disabled selected>Місце оренди</option>
+
+      <option>Київ</option>
+      <option>Львів</option>
+      <option>Одеса</option>
+      <option>Дніпро</option>
+    </select>
+    <div class="map-section">
+      <input type="text" id="return-location" placeholder="Місце повернення (натисніть для карти)" readonly onclick="toggleMap()">
+      <div id="map-wrapper">
+        <div id="map"></div>
+      </div>
+    </div>
+    <input type="date" title="Дата оренди" />
+    <input type="date" title="Дата повернення" />
+    <button class="btn-submit">Забронювати зараз</button>
+  </div>
+</section>
+    <section class="features">
+        <div class="feature-card">
+            <img src="images/accessibility.png" alt="Доступність" class="f-icon">
+            <h4>Доступність</h4>
+            <p>Орендуйте автомобіль у будь-якому зручному місці.</p>
+        </div>
+        <div class="feature-card">
+            <img src="images/car.png" alt="Комфорт" class="f-icon">
+            <h4>Комфорт</h4>
+            <p>Насолоджуйтесь поїздкою на нових автомобілях.</p>
+        </div>
+        <div class="feature-card">
+            <img src="images/wallet.png" alt="Економія" class="f-icon">
+            <h4>Економія</h4>
+            <p>Ми пропонуємо найкращі ціни та прозорі умови.</p>
+        </div>
+    </section>
+
+    <section class="how-we-works">
+        <div class="how-we-works-container">
+            
+            <div class="how-image">
+                <img src="images/how-it-works.png" alt="Процес оренди">
+            </div>
+
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4>Завжди вчасно</h4>
+                        <p>Ми дбаємо про те, щоб автомобіль був готовий саме тоді, коли він вам потрібен.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4>Швидке оформлення</h4>
+                        <p>Процес оренди займає мінімум часу. Жодних зайвих паперів.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4>Впевненість у дорозі</h4>
+                        <p>Наші автомобілі проходять регулярний технічний огляд для вашої безпеки.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <h4>Найкращі пропозиції</h4>
+                        <p>Обирайте серед широкого асортименту моделей за вигідними цінами.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<section class="car-selection">
+    <div class="container">
+        
+        <div class="car-header">
+            <h2>Оберіть авто, що підходить вам</h2>
+            <a href="vehicles.html" class="view-all">Переглянути всі &rarr;</a>
+        </div>
+
+        <div class="car-grid">
+            
+ <div class="car-card">
+    <div class="car-image">
+        <img src="images/mercedes-sedan.png" alt="Mercedes Sedan">
+    </div>
+    <div class="car-details">
+        <div class="car-title">
+            <h3>Mercedes</h3>
+            <p>Седан</p>
+        </div>
+        <div class="car-price">
+            <strong>$25</strong>
+            <span>на день</span>
+        </div>
+    </div>
+    <div class="car-specs">
+        <span class="spec-item"><img src="images/icon-automat.png" alt="gearbox" class="spec-icon"> Автомат</span>
+        <span class="spec-item"><img src="images/icon-gas.png" alt="gas" class="spec-icon"> Бензин 95</span>
+        <span class="spec-item"><img src="images/icon-air.png" alt="air" class="spec-icon"> Кондиціонер</span>
+    </div>
+    <a href="vehicles/mercedes.html" class="btn-view-details">Детальніше</a>
+</div>
+
+<div class="car-card">
+    <div class="car-image">
+        <img src="images/mercedes-benz_s-class.png" alt="Mercedes Sport">
+    </div>
+    <div class="car-details">
+        <div class="car-title">
+            <h3>Mercedes Benz S-Class</h3>
+            <p>Спорт</p>
+        </div>
+        <div class="car-price">
+            <strong>$50</strong>
+            <span>на день</span>
+        </div>
+    </div>
+    <div class="car-specs">
+        <span class="spec-item"><img src="images/icon-automat.png" alt="gearbox" class="spec-icon"> Автомат</span>
+        <span class="spec-item"><img src="images/icon-gas.png" alt="gas" class="spec-icon"> Бензин 95</span>
+        <span class="spec-item"><img src="images/icon-air.png" alt="air" class="spec-icon"> Кондиціонер</span>
+    </div>
+    <a href="vehicles/mercedes-benz_s-class.html" class="btn-view-details">Детальніше</a>
+</div>
+
+<div class="car-card">
+    <div class="car-image">
+        <img src="images/mercedes-sedan.png" alt="Mercedes Sedan">
+    </div>
+    <div class="car-details">
+        <div class="car-title">
+            <h3>Mercedes</h3>
+            <p>Седан</p>
+        </div>
+        <div class="car-price">
+            <strong>$45</strong>
+            <span>на день</span>
+        </div>
+    </div>
+    <div class="car-specs">
+        <span class="spec-item"><img src="images/icon-automat.png" alt="gearbox" class="spec-icon"> Автомат</span>
+        <span class="spec-item"><img src="images/icon-gas.png" alt="gas" class="spec-icon"> Бензин 95</span>
+        <span class="spec-item"><img src="images/icon-air.png" alt="air" class="spec-icon"> Кондиціонер</span>
+    </div>
+    <a href="vehicles/Mercedes.html" class="btn-view-details">Детальніше</a>
+</div>
+
+<div class="car-card">
+    <div class="car-image">
+        <img src="images/porsche-suv.png" alt="Porsche SUV">
+    </div>
+    <div class="car-details">
+        <div class="car-title">
+            <h3>Porsche</h3>
+            <p>Кросовер</p>
+        </div>
+        <div class="car-price">
+            <strong>$40</strong>
+            <span>на день</span>
+        </div>
+    </div>
+    <div class="car-specs">
+        <span class="spec-item"><img src="images/icon-automat.png" alt="gearbox" class="spec-icon"> Автомат</span>
+        <span class="spec-item"><img src="images/icon-gas.png" alt="gas" class="spec-icon"> Бензин 95</span>
+        <span class="spec-item"><img src="images/icon-air.png" alt="air" class="spec-icon"> Кондиціонер</span>
+    </div>
+    <a href="vehicles/porshe.html" class="btn-view-details">Детальніше</a>
+</div>
+
+<div class="car-card">
+    <div class="car-image">
+        <img src="images/bmw-m5.png" alt="BMW Sedan">
+    </div>
+    <div class="car-details">
+        <div class="car-title">
+            <h3>BMW</h3>
+            <p>Седан</p>
+        </div>
+        <div class="car-price">
+            <strong>$35</strong>
+            <span>на день</span>
+        </div>
+    </div>
+    <div class="car-specs">
+        <span class="spec-item"><img src="images/icon-automat.png" alt="gearbox" class="spec-icon"> Автомат</span>
+        <span class="spec-item"><img src="images/icon-gas.png" alt="gas" class="spec-icon"> Бензин 95</span>
+        <span class="spec-item"><img src="images/icon-air.png" alt="air" class="spec-icon"> Кондиціонер</span>
+    </div>
+    <a href="vehicles/BMW.html" class="btn-view-details">Детальніше</a>
+</div>
+
+<div class="car-card">
+    <div class="car-image">
+        <img src="images/porsche-suv.png" alt="Porsche SUV">
+    </div>
+    <div class="car-details">
+        <div class="car-title">
+            <h3>Porsche</h3>
+            <p>Кросовер</p>
+        </div>
+        <div class="car-price">
+            <strong>$50</strong>
+            <span>на день</span>
+        </div>
+    </div>
+    <div class="car-specs">
+        <span class="spec-item"><img src="images/icon-automat.png" alt="gearbox" class="spec-icon"> Автомат</span>
+        <span class="spec-item"><img src="images/icon-gas.png" alt="gas" class="spec-icon"> Бензин 95</span>
+        <span class="spec-item"><img src="images/icon-air.png" alt="air" class="spec-icon"> Кондиціонер</span>
+    </div>
+    <a href="vehicles/porshe.html" class="btn-view-details">Детальніше</a>
+</div>
+
+        </div>
+    </div>
+</section>
+</body>
+</html>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<section class="facts-section">
+    <div class="container">
+        <div class="facts-block">
+            <div class="facts-bg"></div>
+            <div class="facts-content">
+                <h2>Факти у цифрах</h2>
+                <p class="facts-subtitle">Тут закладено міцну основу для розвитку. Кожна деталь ретельно продумана: чітка структура, якісне наповнення та зручність у використанні. Постійне вдосконалення й оновлення забезпечують стабільні результати та високу ефективність.</p>
+                
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <div class="fact-icon-wrap">
+                            <img src="images/icon-car-white.png" alt="Car" class="fact-icon">
+                        </div>
+                        <div class="fact-data">
+                            <strong>540+</strong>
+                            <span>Автомобілів</span>
+                        </div>
+                    </div>
+
+                    <div class="fact-card">
+                        <div class="fact-icon-wrap">
+                            <img src="images/icon-user-white.png" alt="Customer" class="fact-icon">
+                        </div>
+                        <div class="fact-data">
+                            <strong>20k+</strong>
+                            <span>Клієнтів</span>
+                        </div>
+                    </div>
+
+                    <div class="fact-card">
+                        <div class="fact-icon-wrap">
+                            <img src="images/icon-calendar-white.png" alt="Year" class="fact-icon">
+                        </div>
+                        <div class="fact-data">
+                            <strong>25+</strong>
+                            <span>Років</span>
+                        </div>
+                    </div>
+
+                    <div class="fact-card">
+                        <div class="fact-icon-wrap">
+                            <img src="images/icon-speed-white.png" alt="Mile" class="fact-icon">
+                        </div>
+                        <div class="fact-data">
+                            <strong>20m+</strong>
+                            <span>Миль</span>
+							
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="download-app">
+    <div class="app-container">
+        <div class="app-info">
+            <h1>Завантажуй<br>наш додаток!</h1>
+            <p>Завантажуй додаток і відкрий для себе новий рівень свободи пересування — обирай авто поруч за лічені секунди, бронюй без зайвих дзвінків і паперів, сідай за кермо тоді, коли це потрібно саме тобі, та насолоджуйся комфортною поїздкою у будь-який момент — швидко, зручно та без зайвого клопоту</p>
+            <div class="app-buttons">
+                <a href="https://apps.apple.com/us/app/apple-store/id375380948"><img src="images/app-store.png" alt="App Store"></a>
+                <a href="https://play.google.com/store/games?hl=uk"><img src="images/google-play.png" alt="Google Play"></a>
+            </div>
+        </div>
+        <div class="app-image">
+            <img src="images/iphone.jpg" alt="Phones">
+        </div>
+    </div>
+</section>
+<section class="search-section">
+    <div class="container">
+        <div class="search-banner">
+            <div class="search-content">
+                <h1>Насолоджуйтесь кожною милею з надійним супутником.</h1>
+                <p>Широкий вибір автомобілів для будь-яких потреб. Комфорт та безпека у кожній поїздці.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Місто">
+                    <button class="search-btn">Пошук</button>
+                </div>
+            </div>
+            <div class="search-car-bg">
+                <img src="images/car2.png" alt="Car">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+<div class="footer-contacts">
+        <div class="logo-area">
+            <img src="images/logo-car.png" alt="Car Rental" class="logo-img">
+            <span class="logo-text">Car Rental</span>
+        </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-map.png" alt="Address">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Адреса</strong>
+            <p class="contact-value">вул. Центральна, Київ, 01001</p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-mail.png" alt="Email">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Email</strong>
+            <p class="contact-value">info@car-rental.com.ua</p>
+        </div>
+    </div>
+
+    <div class="contact-item">
+        <div class="icon-circle">
+            <img src="images/icon-phone.png" alt="Phone">
+        </div>
+        <div class="contact-info">
+            <strong class="contact-label">Телефон</strong>
+            <p class="contact-value">+380 666 666 666</p>
+        </div>
+    </div>
+</div>
+<div class="footer-main">
+    <div class="footer-column footer-description">
+        <h3>Завантажуй мобільний додаток і насолоджуйся швидкою, зручною та простою орендою авто будь-де і будь-коли — обирай авто, бронюй за секунди та вирушай у дорогу без зайвих турбот.</h3>
+  
+    </div>
+
+    <div class="footer-column">
+        <h3>Корисні посилання</h3>
+        <ul>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Зв'яжіться з нами</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">F.A.Q</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Транспортні засоби</h3>
+        <ul>
+            <li><a href="#">Седан</a></li>
+            <li><a href="#">Кабріолет</a></li>
+            <li><a href="#">Пікап</a></li>
+            <li><a href="#">Мінівен</a></li>
+            <li><a href="#">Позашляховик</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Завантажити додаток</h3>
+        <div class="footer-app-links">
+            <a href="https://apps.apple.com/us/app/apple-store/id375380948"><img src="images/app-store.png" alt="App Store"></a>
+            <a href="https://play.google.com/store/games?hl=uk"><img src="images/google-play.png" alt="Google Play"></a>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div class="container">
+        <p>© Copyright Car Rental 2026. Design by ASiryi.guru</p>
+    </div>
+</div>
+<script>
+
+  // 1. Инициализация карты
+
+  var map = L.map('map').setView([50.4501, 30.5234], 11);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+
+    attribution: '© OpenStreetMap'
+
+  }).addTo(map);
+
+
+
+  var marker;
+
+  var wrapper = document.getElementById('map-wrapper');
+
+  var input = document.getElementById('return-location');
+
+
+
+  // 2. Функция открытия/закрытия карты
+
+  function toggleMap() {
+
+    if (wrapper.classList.contains('open')) {
+
+      wrapper.classList.remove('open');
+
+    } else {
+
+      wrapper.classList.add('open');
+
+      // Обновляем карту, так как она была скрыта
+
+      setTimeout(() => { map.invalidateSize(); }, 300);
+
+    }
+
+  }
+
+
+
+  // 3. Логика клика по карте
+
+  map.on('click', function(e) {
+
+    if (marker) { map.removeLayer(marker); }
+
+    marker = L.marker(e.latlng).addTo(map);
+
+    
+
+    // Запрос названия города (Геокодинг)
+
+    fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${e.latlng.lat}&lon=${e.latlng.lng}&accept-language=uk`)
+
+      .then(response => response.json())
+
+      .then(data => {
+
+        let address = data.address;
+
+        let city = address.city || address.town || address.village || address.suburb || "Точка обрана";
+
+        
+
+        input.value = "м. " + city;
+
+        
+
+        // Закрываем карту через секунду после выбора
+
+        setTimeout(() => {
+
+          wrapper.classList.remove('open');
+
+        }, 800);
+
+      })
+
+      .catch(() => {
+
+        input.value = "Точка обрана";
+
+        setTimeout(() => { wrapper.classList.remove('open'); }, 800);
+
+      });
+
+  });
+
+</script>
