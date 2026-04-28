@@ -1354,6 +1354,93 @@ body { background: #fdfdfd; }
     }
 }
 
+/* --- MOBILE RESCUE FIX (iPhone 15 and similar) --- */
+.benefits-image .blurred-bg-card {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    border-radius: 30px;
+    background: url('images/how-it-works.png') center center / cover no-repeat;
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden !important;
+    }
+
+    .main-wrapper,
+    .container,
+    .car-selection,
+    .car-grid,
+    .car-card,
+    .details-container,
+    .details-left,
+    .details-right {
+        max-width: 100% !important;
+    }
+
+    .details-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 14px !important;
+    }
+
+    .details-right,
+    .details-left {
+        flex: 1 1 auto !important;
+        width: 100% !important;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr 1fr !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .spec-card {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 88px;
+    }
+
+    .car-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .car-specs {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+    }
+
+    .benefits-image,
+    .benefits-image .blurred-bg-card {
+        min-height: 240px !important;
+        height: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .main-wrapper,
+    .container,
+    .car-selection {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .car-header h2 {
+        font-size: 21px !important;
+    }
+}
+
 /* --- FINAL MOBILE OVERRIDES (car selection block) --- */
 @media (max-width: 768px) {
     .car-selection {
