@@ -1441,6 +1441,259 @@ body { background: #fdfdfd; }
     }
 }
 
+/* --- INDEX MOBILE EMERGENCY FIX --- */
+@media (max-width: 768px) {
+    body {
+        min-width: 0 !important;
+    }
+
+    .container,
+    .main-wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .hero {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        min-height: auto !important;
+        padding: 18px !important;
+        margin: 10px 12px !important;
+        border-radius: 16px !important;
+        gap: 14px !important;
+    }
+
+    .hero-text {
+        max-width: 100% !important;
+    }
+
+    .hero-text h1 {
+        font-size: 34px !important;
+        line-height: 1.15 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .fun-text {
+        font-size: 15px !important;
+        line-height: 1.45 !important;
+    }
+
+    .booking {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 14px !important;
+        border-radius: 14px !important;
+    }
+
+    .booking h3 {
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .booking select,
+    .booking input,
+    .btn-submit {
+        font-size: 14px !important;
+    }
+
+    .features {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        padding: 24px 12px !important;
+    }
+
+    .feature-card {
+        max-width: 100% !important;
+    }
+
+    .how-we-works {
+        margin: 20px auto !important;
+        padding: 0 12px !important;
+    }
+
+    .how-we-works-container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    .step-content h4 {
+        font-size: 17px !important;
+    }
+
+    .step-content p {
+        font-size: 14px !important;
+    }
+
+    .car-selection .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .car-header h2 {
+        font-size: 30px !important;
+        line-height: 1.15 !important;
+    }
+
+    .car-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .car-card {
+        width: 100% !important;
+    }
+
+    .facts-section {
+        padding: 24px 12px !important;
+    }
+
+    .facts-block {
+        padding: 20px 14px !important;
+        border-radius: 16px !important;
+    }
+
+    .facts-content h2 {
+        font-size: 30px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .facts-subtitle {
+        font-size: 14px !important;
+        line-height: 1.45 !important;
+        margin-bottom: 18px !important;
+        opacity: 0.95 !important;
+    }
+
+    .facts-grid {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+
+    .fact-card {
+        padding: 12px !important;
+        border-radius: 12px !important;
+    }
+
+    .fact-data strong {
+        font-size: 20px !important;
+    }
+
+    .fact-data span {
+        font-size: 14px !important;
+    }
+
+    .download-app {
+        padding: 24px 12px !important;
+    }
+
+    .app-container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        padding: 0 !important;
+    }
+
+    .app-info {
+        max-width: 100% !important;
+    }
+
+    .app-info h1 {
+        font-size: 40px !important;
+        line-height: 1.1 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .app-info p {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 14px !important;
+    }
+
+    .app-buttons {
+        gap: 10px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .app-buttons img {
+        height: 36px !important;
+    }
+
+    .app-image {
+        justify-content: center !important;
+    }
+
+    .app-image img {
+        width: min(100%, 260px) !important;
+        max-width: 260px !important;
+        height: auto !important;
+    }
+
+    .search-section {
+        padding: 24px 12px !important;
+    }
+
+    .search-banner {
+        padding: 18px 14px !important;
+        border-radius: 16px !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+    }
+
+    .search-content h1 {
+        font-size: 30px !important;
+        line-height: 1.15 !important;
+    }
+
+    .search-content p {
+        font-size: 14px !important;
+        line-height: 1.45 !important;
+    }
+
+    .search-car-bg {
+        text-align: center !important;
+        opacity: 0.18 !important;
+    }
+
+    .search-car-bg img {
+        max-width: 260px !important;
+    }
+
+    .footer {
+        padding: 20px 12px !important;
+    }
+
+    .footer-main {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+        padding: 16px 0 !important;
+    }
+
+    .footer-description,
+    .footer-column {
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .hero-text h1,
+    .car-header h2,
+    .facts-content h2,
+    .app-info h1,
+    .search-content h1 {
+        font-size: 36px !important;
+    }
+}
+
 /* --- FINAL MOBILE OVERRIDES (car selection block) --- */
 @media (max-width: 768px) {
     .car-selection {
