@@ -1,4 +1,4 @@
-/* --- ЗАГАЛЬНІ СТИЛІ --- */
+/* --- Ð—ÐÐ“ÐÐ›Ð¬ÐÐ† Ð¡Ð¢Ð˜Ð›Ð† --- */
 * {
   margin: 0; 
   padding: 0; 
@@ -64,7 +64,7 @@ body { background: #fdfdfd; }
 .main-nav {
     position: absolute !important;
     left: 50% !important;
-    transform: translateX(-50%) !important; /* Магія ідеального центру */
+    transform: translateX(-50%) !important; /* ÐœÐ°Ð³Ñ–Ñ Ñ–Ð´ÐµÐ°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ñ†ÐµÐ½Ñ‚Ñ€Ñƒ */
     display: flex !important;
     gap: 30px !important;
     margin: 0 !important;
@@ -377,14 +377,14 @@ body { background: #fdfdfd; }
 /* --- FOOTER --- */
 .footer { text-align: center; padding: 40px; background: #fff; border-top: 1px solid #eee; }
 
-/* --- СЕКЦІЯ ВИБОРУ АВТОМОБІЛІВ --- */
+/* --- Ð¡Ð•ÐšÐ¦Ð†Ð¯ Ð’Ð˜Ð‘ÐžÐ Ð£ ÐÐ’Ð¢ÐžÐœÐžÐ‘Ð†Ð›Ð†Ð’ --- */
 .car-selection {
     max-width: 1820px;
     margin: 80px auto;
     padding: 0 80px;
 }
 
-/* ЗАГОЛОВОК */
+/* Ð—ÐÐ“ÐžÐ›ÐžÐ’ÐžÐš */
 .car-header {
     display: flex;
     justify-content: space-between;
@@ -913,7 +913,7 @@ body { background: #fdfdfd; }
 
 .footer-main {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr; /* Розподіл колонок */
+    grid-template-columns: 1.5fr 1fr 1fr 1fr; /* Ð Ð¾Ð·Ð¿Ð¾Ð´Ñ–Ð» ÐºÐ¾Ð»Ð¾Ð½Ð¾Ðº */
     gap: 400px;
     padding-top: 20px;
 }
@@ -1018,7 +1018,7 @@ body { background: #fdfdfd; }
     margin: 0;
 }
 
-/* Стилі для інших колонок (посилання) */
+/* Ð¡Ñ‚Ð¸Ð»Ñ– Ð´Ð»Ñ Ñ–Ð½ÑˆÐ¸Ñ… ÐºÐ¾Ð»Ð¾Ð½Ð¾Ðº (Ð¿Ð¾ÑÐ¸Ð»Ð°Ð½Ð½Ñ) */
 .footer-column:not(.footer-description) {
     flex: 1; 
     min-width: 150px;
@@ -1147,7 +1147,7 @@ body { background: #fdfdfd; }
     display: block; 
 }
 
-/* 2. Кнопка "Детальніше" (btn-view-details) */
+/* 2. ÐšÐ½Ð¾Ð¿ÐºÐ° "Ð”ÐµÑ‚Ð°Ð»ÑŒÐ½Ñ–ÑˆÐµ" (btn-view-details) */
 .btn-view-details {
     display: block; 
     width: 100%;
@@ -1230,7 +1230,7 @@ body { background: #fdfdfd; }
     margin: 60px 0;        
     overflow: hidden;       
 
-/* Сама фотографія */
+/* Ð¡Ð°Ð¼Ð° Ñ„Ð¾Ñ‚Ð¾Ð³Ñ€Ð°Ñ„Ñ–Ñ */
 .brands-full-photo {
     width: 1700px;          
     height: 100px;         
@@ -1245,7 +1245,7 @@ body { background: #fdfdfd; }
     flex-wrap: nowrap !important; 
     align-items: center !important;
 }
-/* --- СТИЛІ ДЛЯ СЕКЦІЇ ABOUT US --- */
+/* --- Ð¡Ð¢Ð˜Ð›Ð† Ð”Ð›Ð¯ Ð¡Ð•ÐšÐ¦Ð†Ð‡ ABOUT US --- */
 .about-hero {
     text-align: center;
     padding: 60px 0;
@@ -1267,9 +1267,587 @@ body { background: #fdfdfd; }
     font-weight: 600;
 }
 
+/* --- FINAL MOBILE OVERRIDES (car selection block, keep at file end) --- */
+@media (max-width: 768px) {
+    .car-selection {
+        margin: 28px auto !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .car-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .car-header h2 {
+        font-size: 24px !important;
+        line-height: 1.25;
+    }
+
+    .view-all {
+        font-size: 14px;
+    }
+
+    .car-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .car-card {
+        width: 100% !important;
+        border-radius: 16px;
+        padding: 14px !important;
+    }
+
+    .car-image {
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    .car-image img {
+        max-width: 100%;
+    }
+
+    .car-title h3 {
+        font-size: 18px;
+    }
+
+    .car-title p,
+    .car-price span {
+        font-size: 14px;
+    }
+
+    .car-price strong {
+        font-size: 22px;
+    }
+
+    .car-specs {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+        margin: 12px 0 !important;
+    }
+
+    .spec-item {
+        white-space: normal !important;
+        font-size: 14px;
+    }
+
+    .btn-view-details {
+        font-size: 14px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .car-header h2 {
+        font-size: 22px !important;
+    }
+
+    .car-card {
+        padding: 12px !important;
+    }
+}
+
+/* --- FINAL MOBILE OVERRIDES (car selection block) --- */
+@media (max-width: 768px) {
+    .car-selection {
+        margin: 28px auto !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .car-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .car-header h2 {
+        font-size: 24px !important;
+        line-height: 1.25;
+    }
+
+    .view-all {
+        font-size: 14px;
+    }
+
+    .car-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .car-card {
+        width: 100% !important;
+        border-radius: 16px;
+        padding: 14px !important;
+    }
+
+    .car-image {
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    .car-image img {
+        max-width: 100%;
+    }
+
+    .car-title h3 {
+        font-size: 18px;
+    }
+
+    .car-title p,
+    .car-price span {
+        font-size: 14px;
+    }
+
+    .car-price strong {
+        font-size: 22px;
+    }
+
+    .car-specs {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+        margin: 12px 0 !important;
+    }
+
+    .spec-item {
+        white-space: normal !important;
+        font-size: 14px;
+    }
+
+    .btn-view-details {
+        font-size: 14px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .car-header h2 {
+        font-size: 22px !important;
+    }
+
+    .car-card {
+        padding: 12px !important;
+    }
+}
+
+/* --- GLOBAL MOBILE RESPONSIVE --- */
+@media (max-width: 992px) {
+    .main-wrapper,
+    .container,
+    .car-selection,
+    .how-we-works {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .header {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+
+    .main-nav {
+        position: static !important;
+        left: auto !important;
+        transform: none !important;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap !important;
+        gap: 14px !important;
+        order: 3;
+    }
+
+    .header-contacts {
+        margin-left: 0 !important;
+    }
+
+    .hero,
+    .search-banner,
+    .download-container,
+    .how-we-works-container,
+    .details-container,
+    .booking-container,
+    .booking-grid,
+    .car-info-wrapper,
+    .benefits-grid,
+    .app-banner-card,
+    .app-banner,
+    .exp-grid {
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+
+    .car-grid,
+    .blog-grid,
+    .reviews-grid,
+    .facts-grid,
+    .footer-main,
+    .footer-contacts,
+    .specs-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+    }
+
+    .booking-card,
+    .booking-form-card,
+    .details-right,
+    .details-left {
+        width: 100%;
+        max-width: none;
+        flex: 1 1 auto;
+    }
+
+    .booking-image-wrap,
+    .contact-image-placeholder,
+    .video-content,
+    .video-container {
+        min-height: 280px;
+        height: auto;
+    }
+
+    .hero-text h1,
+    .section-title,
+    .page-title,
+    .app-info h1,
+    .app-info h2,
+    .download-text-content h2,
+    .facts-content h2,
+    .exp-text h2,
+    .car-name-big {
+        font-size: 34px !important;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        align-items: flex-start;
+    }
+
+    .logo-text {
+        font-size: 18px;
+    }
+
+    .phone-text {
+        display: none;
+    }
+
+    .main-nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 4px;
+    }
+
+    .main-nav a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .hero,
+    .search-banner,
+    .facts-block,
+    .app-promo,
+    .app-banner-card,
+    .app-banner {
+        border-radius: 20px;
+        padding: 24px !important;
+    }
+
+    .car-grid,
+    .blog-grid,
+    .reviews-grid,
+    .facts-grid,
+    .footer-main,
+    .footer-contacts,
+    .spec-grid,
+    .specs-grid,
+    .about-features,
+    .check-list,
+    .exp-checks,
+    .equipment-list {
+        grid-template-columns: 1fr !important;
+    }
+
+    .stats-bar,
+    .stats-header,
+    .about-stats,
+    .features {
+        flex-direction: column;
+        gap: 20px;
+        padding: 32px 0;
+    }
+
+    .car-details,
+    .car-specs {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .download-phones-mockup,
+    .app-image,
+    .app-mockup {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .download-phones-mockup .phone-mockup,
+    .app-image img,
+    .app-mockup img {
+        position: static;
+        width: min(100%, 280px);
+        height: auto;
+        margin: 0;
+    }
+
+    .footer-description {
+        min-width: 0;
+        flex: 1 1 auto !important;
+    }
+
+    .brands-full-photo {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-wrapper,
+    .container,
+    .car-selection,
+    .how-we-works {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .hero,
+    .search-banner,
+    .facts-block,
+    .app-promo,
+    .app-banner-card,
+    .app-banner,
+    .booking-card,
+    .booking-form-card,
+    .faq-item {
+        padding: 16px !important;
+        border-radius: 16px;
+    }
+
+    .hero-text h1,
+    .section-title,
+    .page-title,
+    .app-info h1,
+    .app-info h2,
+    .download-text-content h2,
+    .facts-content h2,
+    .exp-text h2,
+    .car-name-big,
+    .select-title {
+        font-size: 28px !important;
+    }
+
+    .btn-submit,
+    .btn-book,
+    .btn-view-details,
+    .btn-rent-main,
+    .search-btn {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .blog-img {
+        height: 180px;
+    }
+
+    .phone-icon-circle {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* --- MOBILE POLISH (iPhone 11 / 375px target) --- */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .main-wrapper,
+    .container {
+        width: 100%;
+    }
+
+    .header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px !important;
+    }
+
+    .logo-img {
+        width: 34px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+
+    .main-nav {
+        width: 100%;
+        gap: 10px !important;
+        margin-top: 8px !important;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+        padding: 6px 0;
+    }
+
+    .main-nav a.active::after {
+        height: 2px;
+    }
+
+    .hero-text h1,
+    .section-title,
+    .page-title,
+    .app-info h1,
+    .app-info h2,
+    .download-text-content h2,
+    .facts-content h2,
+    .exp-text h2,
+    .car-name-big,
+    .about-title h2 {
+        font-size: 18px !important;
+    }
+
+    p,
+    .feature-item p,
+    .faq-content,
+    .contact-value,
+    .review-text,
+    .breadcrumb {
+        font-size: 14px !important;
+    }
+
+    .booking-card,
+    .booking-form-card,
+    .car-card,
+    .review-card,
+    .faq-item,
+    .fact-card,
+    .blog-card,
+    .contact-item {
+        width: 100%;
+    }
+
+    .booking-section,
+    .app-promo,
+    .faq-section,
+    .blog-section,
+    .reviews-section,
+    .facts-section,
+    .about-content,
+    .car-details {
+        padding-top: 28px !important;
+        padding-bottom: 28px !important;
+    }
+
+    .footer-contacts {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        width: 100%;
+        padding: 0 !important;
+        margin-bottom: 20px;
+    }
+
+    .footer-contacts .contact-item {
+        border: 1px solid #ececec;
+        border-radius: 14px;
+        padding: 12px;
+        align-items: center;
+    }
+
+    .icon-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-circle img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-label {
+        font-size: 15px;
+    }
+
+    .contact-value {
+        font-size: 14px;
+        word-break: break-word;
+    }
+}
+
+@media (max-width: 375px) {
+    .main-wrapper,
+    .container,
+    .car-selection,
+    .how-we-works {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .header {
+        padding: 8px 10px !important;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+    }
+
+    .btn-submit,
+    .btn-book,
+    .btn-view-details,
+    .btn-rent-main,
+    .search-btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Ліва частина вужча за праву */
+    grid-template-columns: 1fr 2fr; /* Ð›Ñ–Ð²Ð° Ñ‡Ð°ÑÑ‚Ð¸Ð½Ð° Ð²ÑƒÐ¶Ñ‡Ð° Ð·Ð° Ð¿Ñ€Ð°Ð²Ñƒ */
     gap: 60px;
     margin-bottom: 60px;
 }
@@ -1282,7 +1860,7 @@ body { background: #fdfdfd; }
 
 .about-features {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Дві колонки переваг */
+    grid-template-columns: 1fr 1fr; /* Ð”Ð²Ñ– ÐºÐ¾Ð»Ð¾Ð½ÐºÐ¸ Ð¿ÐµÑ€ÐµÐ²Ð°Ð³ */
     gap: 40px;
 }
 
@@ -1298,11 +1876,11 @@ body { background: #fdfdfd; }
     font-size: 14px;
 }
 
-/* --- ВІДЕО ПЛЕЙСХОЛДЕР --- */
+/* --- Ð’Ð†Ð”Ð•Ðž ÐŸÐ›Ð•Ð™Ð¡Ð¥ÐžÐ›Ð”Ð•Ð  --- */
 .video-container {
     width: 100%;
     height: 450px;
-    background: linear-gradient(135deg, #e0e7ff, #f3f4f6); /* Світлий блюр як на фото */
+    background: linear-gradient(135deg, #e0e7ff, #f3f4f6); /* Ð¡Ð²Ñ–Ñ‚Ð»Ð¸Ð¹ Ð±Ð»ÑŽÑ€ ÑÐº Ð½Ð° Ñ„Ð¾Ñ‚Ð¾ */
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -1328,7 +1906,7 @@ body { background: #fdfdfd; }
     transform: scale(1.1);
 }
 
-/* --- ОНОВЛЕННЯ ДЛЯ КАРТОК АВТО (image_ea3038.jpg) --- */
+/* --- ÐžÐÐžÐ’Ð›Ð•ÐÐÐ¯ Ð”Ð›Ð¯ ÐšÐÐ Ð¢ÐžÐš ÐÐ’Ð¢Ðž (image_ea3038.jpg) --- */
 .car-card {
     background: #fff;
     border-radius: 25px;
@@ -1388,11 +1966,11 @@ body { background: #fdfdfd; }
 
 .video-content {
     width: 100%;
-    height: 500px; /* Висота відео */
+    height: 500px; /* Ð’Ð¸ÑÐ¾Ñ‚Ð° Ð²Ñ–Ð´ÐµÐ¾ */
     background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/video-bg.jpg');
     background-size: cover;
     background-position: center;
-    border-radius: 40px; /* Сильне закруглення як на макеті */
+    border-radius: 40px; /* Ð¡Ð¸Ð»ÑŒÐ½Ðµ Ð·Ð°ÐºÑ€ÑƒÐ³Ð»ÐµÐ½Ð½Ñ ÑÐº Ð½Ð° Ð¼Ð°ÐºÐµÑ‚Ñ– */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1403,7 +1981,7 @@ body { background: #fdfdfd; }
 .play-btn {
     width: 90px;
     height: 90px;
-    background: #5d3dfc; /* Твій фіолетовий колір */
+    background: #5d3dfc; /* Ð¢Ð²Ñ–Ð¹ Ñ„Ñ–Ð¾Ð»ÐµÑ‚Ð¾Ð²Ð¸Ð¹ ÐºÐ¾Ð»Ñ–Ñ€ */
     border-radius: 50%;
     border: none;
     color: white;
@@ -1415,14 +1993,14 @@ body { background: #fdfdfd; }
 .play-btn:hover {
     transform: scale(1.1);
 }
-/* Основний контейнер для полів сайту */
+/* ÐžÑÐ½Ð¾Ð²Ð½Ð¸Ð¹ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð´Ð»Ñ Ð¿Ð¾Ð»Ñ–Ð² ÑÐ°Ð¹Ñ‚Ñƒ */
 .main-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px; /* Відступи з боків */
+    padding: 0 40px; /* Ð’Ñ–Ð´ÑÑ‚ÑƒÐ¿Ð¸ Ð· Ð±Ð¾ÐºÑ–Ð² */
 }
 
-/* Заголовок сторінки */
+/* Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº ÑÑ‚Ð¾Ñ€Ñ–Ð½ÐºÐ¸ */
 .about-hero {
     text-align: center;
     padding: 60px 0;
@@ -1431,16 +2009,16 @@ body { background: #fdfdfd; }
 .breadcrumb { color: #888; margin-top: 10px; }
 .breadcrumb span { color: #000; font-weight: 600; }
 
-/* Сітка контенту */
+/* Ð¡Ñ–Ñ‚ÐºÐ° ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚Ñƒ */
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1.5fr; /* Заголовок зліва, переваги справа */
+    grid-template-columns: 1fr 1.5fr; /* Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº Ð·Ð»Ñ–Ð²Ð°, Ð¿ÐµÑ€ÐµÐ²Ð°Ð³Ð¸ ÑÐ¿Ñ€Ð°Ð²Ð° */
     gap: 60px;
     margin-bottom: 60px;
 }
 .about-title h2 { font-size: 38px; font-weight: 800; line-height: 1.2; }
 
-/* Чотири картки переваг */
+/* Ð§Ð¾Ñ‚Ð¸Ñ€Ð¸ ÐºÐ°Ñ€Ñ‚ÐºÐ¸ Ð¿ÐµÑ€ÐµÐ²Ð°Ð³ */
 .about-features {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1449,7 +2027,7 @@ body { background: #fdfdfd; }
 .feature-item h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
 .feature-item p { color: #666; line-height: 1.6; font-size: 15px; }
 
-/* ВІДЕО ТА ВЕЛИКІ КОРДОНИ */
+/* Ð’Ð†Ð”Ð•Ðž Ð¢Ð Ð’Ð•Ð›Ð˜ÐšÐ† ÐšÐžÐ Ð”ÐžÐÐ˜ */
 .video-section-container {
     padding: 40px 0 100px;
     display: flex;
@@ -1458,11 +2036,11 @@ body { background: #fdfdfd; }
 
 .video-container {
     width: 100%;
-    /* Робимо відео вужчим за контент, щоб були великі порожні поля (кордони) */
+    /* Ð Ð¾Ð±Ð¸Ð¼Ð¾ Ð²Ñ–Ð´ÐµÐ¾ Ð²ÑƒÐ¶Ñ‡Ð¸Ð¼ Ð·Ð° ÐºÐ¾Ð½Ñ‚ÐµÐ½Ñ‚, Ñ‰Ð¾Ð± Ð±ÑƒÐ»Ð¸ Ð²ÐµÐ»Ð¸ÐºÑ– Ð¿Ð¾Ñ€Ð¾Ð¶Ð½Ñ– Ð¿Ð¾Ð»Ñ (ÐºÐ¾Ñ€Ð´Ð¾Ð½Ð¸) */
     max-width: 1500px; 
     height: 500px;
     background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
-    border-radius: 40px; /* Сильне закруглення як на макеті */
+    border-radius: 40px; /* Ð¡Ð¸Ð»ÑŒÐ½Ðµ Ð·Ð°ÐºÑ€ÑƒÐ³Ð»ÐµÐ½Ð½Ñ ÑÐº Ð½Ð° Ð¼Ð°ÐºÐµÑ‚Ñ– */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1486,7 +2064,7 @@ body { background: #fdfdfd; }
 .play-button:hover {
     transform: scale(1.1);
 }
-/* --- СЕКЦІЯ СТАТИСТИКИ (Цифри) --- */
+/* --- Ð¡Ð•ÐšÐ¦Ð†Ð¯ Ð¡Ð¢ÐÐ¢Ð˜Ð¡Ð¢Ð˜ÐšÐ˜ (Ð¦Ð¸Ñ„Ñ€Ð¸) --- */
 .about-stats {
     display: flex;
     justify-content: space-around;
@@ -1506,7 +2084,7 @@ body { background: #fdfdfd; }
     margin-top: 10px;
 }
 
-/* --- СЕКЦІЯ ДОСВІДУ (Текст + Картинка) --- */
+/* --- Ð¡Ð•ÐšÐ¦Ð†Ð¯ Ð”ÐžÐ¡Ð’Ð†Ð”Ð£ (Ð¢ÐµÐºÑÑ‚ + ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ°) --- */
 .about-experience {
     padding: 60px 0 100px;
 }
@@ -1529,7 +2107,7 @@ body { background: #fdfdfd; }
     margin-bottom: 30px;
 }
 
-/* Чек-бокси фіолетові */
+/* Ð§ÐµÐº-Ð±Ð¾ÐºÑÐ¸ Ñ„Ñ–Ð¾Ð»ÐµÑ‚Ð¾Ð²Ñ– */
 .exp-checks {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1554,7 +2132,7 @@ body { background: #fdfdfd; }
     font-size: 12px;
 }
 
-/* Плейсхолдер для картинки досвіду */
+/* ÐŸÐ»ÐµÐ¹ÑÑ…Ð¾Ð»Ð´ÐµÑ€ Ð´Ð»Ñ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ Ð´Ð¾ÑÐ²Ñ–Ð´Ñƒ */
 .exp-img-placeholder {
     width: 100%;
     height: 450px;
@@ -1563,7 +2141,7 @@ body { background: #fdfdfd; }
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-/* ВІДЕО КОНТЕЙНЕР (з відступами) */
+/* Ð’Ð†Ð”Ð•Ðž ÐšÐžÐÐ¢Ð•Ð™ÐÐ•Ð  (Ð· Ð²Ñ–Ð´ÑÑ‚ÑƒÐ¿Ð°Ð¼Ð¸) */
 .video-section {
     padding: 40px 0;
     display: flex;
@@ -1571,7 +2149,7 @@ body { background: #fdfdfd; }
 }
 .video-container {
     width: 100%;
-    max-width: 1000px; /* Великі кордони навколо відео */
+    max-width: 1000px; /* Ð’ÐµÐ»Ð¸ÐºÑ– ÐºÐ¾Ñ€Ð´Ð¾Ð½Ð¸ Ð½Ð°Ð²ÐºÐ¾Ð»Ð¾ Ð²Ñ–Ð´ÐµÐ¾ */
     height: 500px;
     background: #e5e7eb;
     border-radius: 40px;
@@ -1599,7 +2177,7 @@ body { background: #fdfdfd; }
     padding: 0 40px;
 }
 
-/* СЕКЦІЯ ДОДАТКА */
+/* Ð¡Ð•ÐšÐ¦Ð†Ð¯ Ð”ÐžÐ”ÐÐ¢ÐšÐ */
 .app-download-section {
     padding: 80px 0;
 }
@@ -1619,7 +2197,7 @@ body { background: #fdfdfd; }
 .app-buttons img { height: 45px; margin-right: 15px; cursor: pointer; margin-top: 20px;}
 .app-phone-img img { height: 480px; margin-top: 80px; }
 
-/* ВІДГУКИ */
+/* Ð’Ð†Ð”Ð“Ð£ÐšÐ˜ */
 .reviews-section { padding: 80px 0; text-align: center; }
 .section-title { font-size: 36px; font-weight: 800; margin-bottom: 50px; }
 .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
@@ -1648,7 +2226,7 @@ body { background: #fdfdfd; }
 .user-info strong { display: block; font-size: 16px; }
 .user-info span { font-size: 13px; color: #888; }
 
-/* СТАТИСТИКА */
+/* Ð¡Ð¢ÐÐ¢Ð˜Ð¡Ð¢Ð˜ÐšÐ */
 .about-stats { display: flex; justify-content: space-around; padding: 60px 0; border-bottom: 1px solid #eee; }
 .stat-number { font-size: 60px; font-weight: 900; color: var(--main-purple); display: block; }
 .stat-item p { font-weight: 700; font-size: 18px; margin-top: 5px; }
@@ -1668,7 +2246,7 @@ body { background: #fdfdfd; }
     border-radius: 24px;
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Щоб фіолетовий фон знизу не вилізав за закруглення */
+    overflow: hidden; /* Ð©Ð¾Ð± Ñ„Ñ–Ð¾Ð»ÐµÑ‚Ð¾Ð²Ð¸Ð¹ Ñ„Ð¾Ð½ Ð·Ð½Ð¸Ð·Ñƒ Ð½Ðµ Ð²Ð¸Ð»Ñ–Ð·Ð°Ð² Ð·Ð° Ð·Ð°ÐºÑ€ÑƒÐ³Ð»ÐµÐ½Ð½Ñ */
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     text-align: left;
 }
@@ -1686,12 +2264,12 @@ body { background: #fdfdfd; }
     font-size: 16px;
     color: #444;
     line-height: 1.6;
-    flex-grow: 1; /* Виштовхує футер до низу, якщо тексту мало */
+    flex-grow: 1; /* Ð’Ð¸ÑˆÑ‚Ð¾Ð²Ñ…ÑƒÑ” Ñ„ÑƒÑ‚ÐµÑ€ Ð´Ð¾ Ð½Ð¸Ð·Ñƒ, ÑÐºÑ‰Ð¾ Ñ‚ÐµÐºÑÑ‚Ñƒ Ð¼Ð°Ð»Ð¾ */
 }
 
-/* ФІОЛЕТОВА НИЖНЯ ЧАСТИНА */
-/* ФІОЛЕТОВА НИЖНЯ ЧАСТИНА З ЧІТКИМ ЗАКРУГЛЕННЯМ */
-/* ФІОЛЕТОВА НИЖНЯ ЧАСТИНА (ПЛАШКА) З ЧІТКИМ ЗАКРУГЛЕННЯМ */
+/* Ð¤Ð†ÐžÐ›Ð•Ð¢ÐžÐ’Ð ÐÐ˜Ð–ÐÐ¯ Ð§ÐÐ¡Ð¢Ð˜ÐÐ */
+/* Ð¤Ð†ÐžÐ›Ð•Ð¢ÐžÐ’Ð ÐÐ˜Ð–ÐÐ¯ Ð§ÐÐ¡Ð¢Ð˜ÐÐ Ð— Ð§Ð†Ð¢ÐšÐ˜Ðœ Ð—ÐÐšÐ Ð£Ð“Ð›Ð•ÐÐÐ¯Ðœ */
+/* Ð¤Ð†ÐžÐ›Ð•Ð¢ÐžÐ’Ð ÐÐ˜Ð–ÐÐ¯ Ð§ÐÐ¡Ð¢Ð˜ÐÐ (ÐŸÐ›ÐÐ¨ÐšÐ) Ð— Ð§Ð†Ð¢ÐšÐ˜Ðœ Ð—ÐÐšÐ Ð£Ð“Ð›Ð•ÐÐÐ¯Ðœ */
 .review-footer {
     background: #5d3dfc;
     padding: 20px 30px;
@@ -1700,26 +2278,26 @@ body { background: #fdfdfd; }
     gap: 15px;
     color: white;
     position: relative;
-    border-radius: 20px; /* Круглі кути самої плашки */
+    border-radius: 20px; /* ÐšÑ€ÑƒÐ³Ð»Ñ– ÐºÑƒÑ‚Ð¸ ÑÐ°Ð¼Ð¾Ñ— Ð¿Ð»Ð°ÑˆÐºÐ¸ */
     overflow: hidden;
     z-index: 1;
 }
 
-/* ФОТОГРАФІЯ КОРИСТУВАЧА - ТЕПЕР ВОНА КРУГЛА */
+/* Ð¤ÐžÐ¢ÐžÐ“Ð ÐÐ¤Ð†Ð¯ ÐšÐžÐ Ð˜Ð¡Ð¢Ð£Ð’ÐÐ§Ð - Ð¢Ð•ÐŸÐ•Ð  Ð’ÐžÐÐ ÐšÐ Ð£Ð“Ð›Ð */
 .user-avatar {
-    width: 60px; /* Зробив трохи більшим для чіткості */
+    width: 60px; /* Ð—Ñ€Ð¾Ð±Ð¸Ð² Ñ‚Ñ€Ð¾Ñ…Ð¸ Ð±Ñ–Ð»ÑŒÑˆÐ¸Ð¼ Ð´Ð»Ñ Ñ‡Ñ–Ñ‚ÐºÐ¾ÑÑ‚Ñ– */
     height: 60px;
     object-fit: cover;
     
-    /* ВОТ ЦЕ ВИПРАВЛЕННЯ: додаємо закруглення 50% */
+    /* Ð’ÐžÐ¢ Ð¦Ð• Ð’Ð˜ÐŸÐ ÐÐ’Ð›Ð•ÐÐÐ¯: Ð´Ð¾Ð´Ð°Ñ”Ð¼Ð¾ Ð·Ð°ÐºÑ€ÑƒÐ³Ð»ÐµÐ½Ð½Ñ 50% */
     border-radius: 50%; 
     
-    /* Декоративна біла рамка навколо фото */
+    /* Ð”ÐµÐºÐ¾Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ð° Ð±Ñ–Ð»Ð° Ñ€Ð°Ð¼ÐºÐ° Ð½Ð°Ð²ÐºÐ¾Ð»Ð¾ Ñ„Ð¾Ñ‚Ð¾ */
     border: 3px solid rgba(255, 255, 255, 0.5); 
     z-index: 2;
 }
 
-/* Декоративні круги залишаються на місці */
+/* Ð”ÐµÐºÐ¾Ñ€Ð°Ñ‚Ð¸Ð²Ð½Ñ– ÐºÑ€ÑƒÐ³Ð¸ Ð·Ð°Ð»Ð¸ÑˆÐ°ÑŽÑ‚ÑŒÑÑ Ð½Ð° Ð¼Ñ–ÑÑ†Ñ– */
 .review-footer::before,
 .review-footer::after {
     content: "";
@@ -1729,7 +2307,7 @@ body { background: #fdfdfd; }
     z-index: -1;
 }
 
-/* Перший круг (зліва) */
+/* ÐŸÐµÑ€ÑˆÐ¸Ð¹ ÐºÑ€ÑƒÐ³ (Ð·Ð»Ñ–Ð²Ð°) */
 .review-footer::before {
     width: 100px;
     height: 100px;
@@ -1737,7 +2315,7 @@ body { background: #fdfdfd; }
     left: -20px;
 }
 
-/* Другий круг (справа) */
+/* Ð”Ñ€ÑƒÐ³Ð¸Ð¹ ÐºÑ€ÑƒÐ³ (ÑÐ¿Ñ€Ð°Ð²Ð°) */
 .review-footer::after {
     width: 70px;
     height: 70px;
@@ -1745,12 +2323,12 @@ body { background: #fdfdfd; }
     right: -10px;
 }
 
-/* Текст зверху */
+/* Ð¢ÐµÐºÑÑ‚ Ð·Ð²ÐµÑ€Ñ…Ñƒ */
 .user-info {
     position: relative;
     z-index: 2;
 }
-/* --- FAQ АКОРДЕОН --- */
+/* --- FAQ ÐÐšÐžÐ Ð”Ð•ÐžÐ --- */
 .faq-container { max-width: 800px; margin: 0 auto; }
 details {
     background: #fff;
@@ -1773,12 +2351,12 @@ details p { margin-top: 15px; color: #666; line-height: 1.6; }
 body { font-family: 'Inter', sans-serif; background: #fff; margin: 0; }
 .main-wrapper { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
 
-/* ТЕКСТ ТА НАВІГАЦІЯ */
+/* Ð¢Ð•ÐšÐ¡Ð¢ Ð¢Ð ÐÐÐ’Ð†Ð“ÐÐ¦Ð†Ð¯ */
 .page-title { text-align: center; font-size: 42px; font-weight: 800; margin-bottom: 5px; }
 .breadcrumb { text-align: center; color: #888; margin-bottom: 40px; }
 .breadcrumb span { color: #000; font-weight: 600; }
 
-/* ФОРМА БРОНЮВАННЯ (image_e7e3d2.png) */
+/* Ð¤ÐžÐ ÐœÐ Ð‘Ð ÐžÐÐ®Ð’ÐÐÐÐ¯ (image_e7e3d2.png) */
 .booking-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 30px; margin-bottom: 80px; }
 .booking-form-card { 
     background: var(--purple); 
@@ -1795,12 +2373,12 @@ body { font-family: 'Inter', sans-serif; background: #fff; margin: 0; }
     border: none; border-radius: 12px; font-weight: 700; cursor: pointer; 
 }
 
-/* СТАТИСТИКА (image_e871e2.png) */
+/* Ð¡Ð¢ÐÐ¢Ð˜Ð¡Ð¢Ð˜ÐšÐ (image_e871e2.png) */
 .stats-bar { display: flex; justify-content: space-around; padding: 60px 0; border-bottom: 1px solid #eee; }
 .num { display: block; font-size: 60px; font-weight: 900; color: var(--purple); }
 .stat-item p { font-weight: 700; color: #111; }
 
-/* ХАРАКТЕРИСТИКИ АВТО (image_e9c3bf.png) */
+/* Ð¥ÐÐ ÐÐšÐ¢Ð•Ð Ð˜Ð¡Ð¢Ð˜ÐšÐ˜ ÐÐ’Ð¢Ðž (image_e9c3bf.png) */
 .car-info-wrapper { display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; padding-top: 60px; }
 .price span { font-size: 32px; font-weight: 800; color: var(--purple); }
 
@@ -1826,16 +2404,16 @@ body { font-family: 'Inter', sans-serif; background: #fff; margin: 0; }
 
 .booking-container {
     display: flex;
-    gap: 30px; /* Відступ між формою та фото */
+    gap: 30px; /* Ð’Ñ–Ð´ÑÑ‚ÑƒÐ¿ Ð¼Ñ–Ð¶ Ñ„Ð¾Ñ€Ð¼Ð¾ÑŽ Ñ‚Ð° Ñ„Ð¾Ñ‚Ð¾ */
     align-items: stretch;
 }
 
-/* Фіолетова картка з формою */
+/* Ð¤Ñ–Ð¾Ð»ÐµÑ‚Ð¾Ð²Ð° ÐºÐ°Ñ€Ñ‚ÐºÐ° Ð· Ñ„Ð¾Ñ€Ð¼Ð¾ÑŽ */
 .booking-card {
-    flex: 1; /* Займає 40% ширини */
+    flex: 1; /* Ð—Ð°Ð¹Ð¼Ð°Ñ” 40% ÑˆÐ¸Ñ€Ð¸Ð½Ð¸ */
     background: #5d3dfc;
     padding: 45px;
-    border-radius: 30px; /* Заокруглені кути як на макеті */
+    border-radius: 30px; /* Ð—Ð°Ð¾ÐºÑ€ÑƒÐ³Ð»ÐµÐ½Ñ– ÐºÑƒÑ‚Ð¸ ÑÐº Ð½Ð° Ð¼Ð°ÐºÐµÑ‚Ñ– */
     color: white;
 }
 
@@ -1888,7 +2466,7 @@ body { font-family: 'Inter', sans-serif; background: #fff; margin: 0; }
 
 
 .booking-image-wrap {
-    flex: 1.5; /* Займає 60% ширини */
+    flex: 1.5; /* Ð—Ð°Ð¹Ð¼Ð°Ñ” 60% ÑˆÐ¸Ñ€Ð¸Ð½Ð¸ */
     border-radius: 30px;
     overflow: hidden;
     position: relative;
@@ -1897,17 +2475,17 @@ body { font-family: 'Inter', sans-serif; background: #fff; margin: 0; }
 .blurred-img {
     width: 100%;
     height: 100%;
-    background-image: url('images/sportcar.jpg'); /* Шлях до твого фото */
+    background-image: url('images/sportcar.jpg'); /* Ð¨Ð»ÑÑ… Ð´Ð¾ Ñ‚Ð²Ð¾Ð³Ð¾ Ñ„Ð¾Ñ‚Ð¾ */
     background-size: cover;
     background-position: center;
-    filter: blur(8px); /* Ефект розмиття */
+    filter: blur(8px); /* Ð•Ñ„ÐµÐºÑ‚ Ñ€Ð¾Ð·Ð¼Ð¸Ñ‚Ñ‚Ñ */
     transform: scale(1.1); 
 }
-/* Контейнер, який тримає форму і фото */
+/* ÐšÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€, ÑÐºÐ¸Ð¹ Ñ‚Ñ€Ð¸Ð¼Ð°Ñ” Ñ„Ð¾Ñ€Ð¼Ñƒ Ñ– Ñ„Ð¾Ñ‚Ð¾ */
 .booking-container {
     display: flex;
     gap: 30px;
-    align-items: stretch; /* Щоб висота була однаковою */
+    align-items: stretch; /* Ð©Ð¾Ð± Ð²Ð¸ÑÐ¾Ñ‚Ð° Ð±ÑƒÐ»Ð° Ð¾Ð´Ð½Ð°ÐºÐ¾Ð²Ð¾ÑŽ */
     width: 100%;
 }
 
@@ -1919,16 +2497,16 @@ body { font-family: 'Inter', sans-serif; background: #fff; margin: 0; }
     color: white;
 }
 
-/* Блок із картинкою (робимо його максимально широким) */
+/* Ð‘Ð»Ð¾Ðº Ñ–Ð· ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¾ÑŽ (Ñ€Ð¾Ð±Ð¸Ð¼Ð¾ Ð¹Ð¾Ð³Ð¾ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾ ÑˆÐ¸Ñ€Ð¾ÐºÐ¸Ð¼) */
 .booking-image-wrap {
-    flex: 1; /* Займає весь вільний простір, що залишився */
+    flex: 1; /* Ð—Ð°Ð¹Ð¼Ð°Ñ” Ð²ÐµÑÑŒ Ð²Ñ–Ð»ÑŒÐ½Ð¸Ð¹ Ð¿Ñ€Ð¾ÑÑ‚Ñ–Ñ€, Ñ‰Ð¾ Ð·Ð°Ð»Ð¸ÑˆÐ¸Ð²ÑÑ */
     border-radius: 30px;
     overflow: hidden;
     position: relative;
     min-height: 500px; 
 }
 
-/* Сама картинка */
+/* Ð¡Ð°Ð¼Ð° ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ° */
 .blurred-img {
     width: 100%;
     height: 100%;
@@ -1938,7 +2516,7 @@ body { font-family: 'Inter', sans-serif; background: #fff; margin: 0; }
     filter: blur(8px);
     transform: scale(1.1);
 }
-/* --- СТАТИСТИКА ТА ПЕРЕВАГИ --- */
+/* --- Ð¡Ð¢ÐÐ¢Ð˜Ð¡Ð¢Ð˜ÐšÐ Ð¢Ð ÐŸÐ•Ð Ð•Ð’ÐÐ“Ð˜ --- */
 .stats-header {
     display: flex;
     justify-content: space-around;
@@ -1967,7 +2545,7 @@ body { font-family: 'Inter', sans-serif; background: #fff; margin: 0; }
     overflow: hidden;
 }
 
-/* --- ПРОМО ДОДАТКУ --- */
+/* --- ÐŸÐ ÐžÐœÐž Ð”ÐžÐ”ÐÐ¢ÐšÐ£ --- */
 .app-promo { padding: 80px 0; }
 .app-banner-card {
     background: #5d3dfc;
@@ -1986,7 +2564,7 @@ body { font-family: 'Inter', sans-serif; background: #fff; margin: 0; }
 .store-buttons img { height: 45px; margin-right: 15px; cursor: pointer; }
 .app-mockup img { height: 450px; margin-top: 80px; }
 
-/* --- FAQ АКОРДЕОН --- */
+/* --- FAQ ÐÐšÐžÐ Ð”Ð•ÐžÐ --- */
 .faq-section { padding: 80px 0; max-width: 900px; margin: 0 auto; }
 .section-center-title { text-align: center; font-size: 36px; margin-bottom: 50px; }
 .faq-item {
@@ -2007,7 +2585,7 @@ summary {
 summary::-webkit-details-marker { display: none; }
 .faq-content { padding-top: 15px; color: #666; line-height: 1.6; }
 
-/* --- БЛОГ --- */
+/* --- Ð‘Ð›ÐžÐ“ --- */
 .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .blog-card { cursor: pointer; }
 .blog-img {
@@ -2022,16 +2600,16 @@ summary::-webkit-details-marker { display: none; }
 .blog-card h3 { font-size: 18px; margin-bottom: 10px; }
 .blog-card span { color: #888; font-size: 13px; }
 
-/* СЕКЦІЯ ДОДАТКУ */
+/* Ð¡Ð•ÐšÐ¦Ð†Ð¯ Ð”ÐžÐ”ÐÐ¢ÐšÐ£ */
 .app-promo {
     background: #5d3dfc;
     border-radius: 40px;
     padding: 60px;
-    color: white; /* Робимо весь текст білим */
+    color: white; /* Ð Ð¾Ð±Ð¸Ð¼Ð¾ Ð²ÐµÑÑŒ Ñ‚ÐµÐºÑÑ‚ Ð±Ñ–Ð»Ð¸Ð¼ */
 }
 
 .app-info .label {
-    color: white; /* "ЗАВАНТАЖТЕ НАШ ДОДАТОК" тепер білий */
+    color: white; /* "Ð—ÐÐ’ÐÐÐ¢ÐÐ–Ð¢Ð• ÐÐÐ¨ Ð”ÐžÐ”ÐÐ¢ÐžÐš" Ñ‚ÐµÐ¿ÐµÑ€ Ð±Ñ–Ð»Ð¸Ð¹ */
     opacity: 0.9;
     font-size: 14px;
     text-transform: uppercase;
@@ -2041,13 +2619,13 @@ summary::-webkit-details-marker { display: none; }
 }
 
 .app-info h2 {
-    color: white; /* Заголовок білий */
+    color: white; /* Ð—Ð°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº Ð±Ñ–Ð»Ð¸Ð¹ */
     font-size: 42px;
     margin-bottom: 20px;
 }
 
 .app-info p {
-    color: white; /* Опис теж білий */
+    color: white; /* ÐžÐ¿Ð¸Ñ Ñ‚ÐµÐ¶ Ð±Ñ–Ð»Ð¸Ð¹ */
     opacity: 0.85;
     font-size: 18px;
     line-height: 1.6;
@@ -2056,18 +2634,415 @@ summary::-webkit-details-marker { display: none; }
     background: #5d3dfc;
     border-radius: 20px;
     padding: 20px;
-    color: white; /* Весь текст всередині білий */
+    color: white; /* Ð’ÐµÑÑŒ Ñ‚ÐµÐºÑÑ‚ Ð²ÑÐµÑ€ÐµÐ´Ð¸Ð½Ñ– Ð±Ñ–Ð»Ð¸Ð¹ */
 }
 
 .user-name {
-    color: white; /* Ім'я біле */
+    color: white; /* Ð†Ð¼'Ñ Ð±Ñ–Ð»Ðµ */
     font-weight: 700;
     font-size: 18px;
     display: block;
 }
 
 .company-name {
-    color: white; /* Назва компанії біла */
+    color: white; /* ÐÐ°Ð·Ð²Ð° ÐºÐ¾Ð¼Ð¿Ð°Ð½Ñ–Ñ— Ð±Ñ–Ð»Ð° */
     opacity: 0.8;
     font-size: 14px;
+}
+/* 1. Ð—ÐÐ“ÐÐ›Ð¬ÐÐ† ÐÐÐ›ÐÐ¨Ð¢Ð£Ð’ÐÐÐÐ¯ */
+:root {
+    --purple: #5d3dfc;
+    --orange: #ff9f0a;
+    --dark: #111;
+    --gray: #8e8e8e;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. Ð¨ÐÐŸÐšÐ (HEADER) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo-area { display: flex; align-items: center; gap: 10px; }
+.logo-img { height: 40px; }
+.logo-text { font-size: 22px; font-weight: 800; }
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--dark);
+    margin: 0 15px;
+    font-weight: 600;
+}
+.main-nav a.active { color: var(--purple); }
+
+/* 3. Ð¡Ð•ÐšÐ¦Ð†Ð¯ Ð‘Ð ÐžÐÐ®Ð’ÐÐÐÐ¯ (Ð— Ñ€Ð¾Ð·Ð¼Ð¸Ñ‚Ð¸Ð¼ Ñ„Ð¾Ñ‚Ð¾) */
+.booking-section {
+    padding: 60px 0;
+}
+
+.booking-container {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.booking-card {
+    flex: 0 0 380px;
+    background: var(--purple);
+    padding: 40px;
+    border-radius: 30px;
+    color: white;
+}
+
+.booking-card h3 { font-size: 28px; margin-bottom: 30px; text-align: center; }
+
+.input-group { margin-bottom: 15px; }
+.input-group select, .input-group input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    outline: none;
+}
+
+.btn-submit, .btn-book {
+    width: 100%;
+    padding: 18px;
+    background: var(--orange);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking-image-wrap {
+    flex: 1;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    min-height: 450px;
+}
+
+.blurred-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/car-bg.jpg'); /* ÐŸÐ•Ð Ð•Ð’Ð†Ð  Ð¨Ð›Ð¯Ð¥ Ð”Ðž Ð¤ÐžÐ¢Ðž */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    transform: scale(1.1);
+}
+
+/* 4. Ð¡Ð¢ÐÐ¢Ð˜Ð¡Ð¢Ð˜ÐšÐ Ð¢Ð ÐŸÐ•Ð Ð•Ð’ÐÐ“Ð˜ */
+.stats-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.num, .stat-value {
+    font-size: 56px;
+    font-weight: 900;
+    color: var(--purple);
+    display: block;
+}
+
+.check-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+}
+
+.check-icon-circle {
+    width: 28px;
+    height: 28px;
+    background: var(--purple);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+/* 5. Ð’Ð†Ð”Ð“Ð£ÐšÐ˜ (REVIEWS) */
+.review-footer {
+    background: var(--purple);
+    padding: 25px;
+    border-radius: 20px; /* Ð—ÐÐšÐ Ð£Ð“Ð›Ð•ÐÐÐ¯ Ð¢Ð£Ð¢ */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* ÐšÐ Ð£Ð“Ð›Ð Ð¤ÐžÐ¢ÐžÐ“Ð ÐÐ¤Ð†Ð¯ */
+    object-fit: cover;
+    border: 3px solid rgba(255,255,255,0.3);
+}
+
+.user-name { font-weight: 700; display: block; }
+.company-name { opacity: 0.8; font-size: 13px; }
+
+/* 6. FAQ ÐÐšÐžÐ Ð”Ð•ÐžÐ */
+.faq-item {
+    border: 1px solid #eee;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+}
+
+summary {
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 7. Ð‘Ð›ÐžÐ“ */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.blog-img {
+    height: 200px;
+    border-radius: 20px;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
+.blog-card span {
+    color: var(--gray); /* Ð¡Ð†Ð Ð˜Ð™ ÐšÐžÐ›Ð†Ð  Ð”Ð›Ð¯ Ð”ÐÐ¢Ð˜ */
+    font-size: 14px;
+}
+.booking-grid, .booking-container {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.booking-form-card, .booking-card {
+    flex: 0 0 380px;
+    background: #5d3dfc;
+    padding: 40px;
+    border-radius: 30px;
+    color: white;
+}
+
+.booking-image-wrap, .contact-image-placeholder {
+    flex: 1;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    min-height: 450px;
+}
+
+.blurred-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    transform: scale(1.1);
+}
+/* Контейнер для всього блоку "Про нас" */
+.about-content {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    font-family: 'Inter', 'Arial', sans-serif; /* Рекомендую Inter для схожості з макетом */
+}
+
+/* Основна сітка: Заголовок зліва (1 частина), контент справа (2 частини) */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Стиль великого заголовка зліва */
+.about-title h2 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #000;
+    margin: 0;
+}
+
+/* Внутрішня сітка для 4-х переваг справа (2 колонки по 2 рядки) */
+.about-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 50px;
+}
+
+/* Стилі окремого пункту переваг */
+.feature-item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.feature-item p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Адаптація для планшетів та телефонів */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr; /* Робимо в одну колонку на планшетах */
+        gap: 40px;
+    }
+
+    .about-title h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-features {
+        grid-template-columns: 1fr; /* Переваги стають одна під одною на телефонах */
+        gap: 30px;
+    }
+}
+
+/* Стиль для хлібних крихт (з твого hero секції) */
+.breadcrumb {
+    color: #888;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.breadcrumb span {
+    color: #000;
+    font-weight: 600;
+}
+
+/* --- FINAL MOBILE OVERRIDES (car selection block, keep at very end) --- */
+@media (max-width: 768px) {
+    .car-selection {
+        margin: 28px auto !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .car-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    .car-header h2 {
+        font-size: 24px !important;
+        line-height: 1.25;
+    }
+
+    .view-all {
+        font-size: 14px;
+    }
+
+    .car-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .car-card {
+        width: 100% !important;
+        border-radius: 16px;
+        padding: 14px !important;
+    }
+
+    .car-image {
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    .car-image img {
+        max-width: 100%;
+    }
+
+    .car-title h3 {
+        font-size: 18px;
+    }
+
+    .car-title p,
+    .car-price span {
+        font-size: 14px;
+    }
+
+    .car-price strong {
+        font-size: 22px;
+    }
+
+    .car-specs {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 8px !important;
+        margin: 12px 0 !important;
+    }
+
+    .spec-item {
+        white-space: normal !important;
+        font-size: 14px;
+    }
+
+    .btn-view-details {
+        font-size: 14px;
+        padding: 12px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .car-header h2 {
+        font-size: 22px !important;
+    }
+
+    .car-card {
+        padding: 12px !important;
+    }
 }
